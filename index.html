@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultoria Marangoni</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-300 via-blue-200 to-white text-slate-900">
+
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white bg-opacity-70 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-blue-900 text-white grid place-items-center font-bold">CM</div>
+        <div class="leading-tight">
+          <div class="font-semibold text-blue-900">Consultoria Marangoni</div>
+          <div class="text-xs text-slate-600">Consultoria Regulatória</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#home" class="hover:text-blue-900">Home</a>
+        <a href="#servicos" class="hover:text-blue-900">Serviços</a>
+        <a href="#sobre" class="hover:text-blue-900">Sobre Nós</a>
+        <a href="#contato" class="hover:text-blue-900">Contato</a>
+      </nav>
+      <a href="https://wa.me/5511971335199" target="_blank" class="hidden md:inline-block rounded-2xl bg-blue-900 text-white px-4 py-2 text-sm shadow">
+        Fale com um especialista
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-900 leading-tight">
+          Regularização de Produtos na Anvisa <span class="block">sem dor de cabeça</span>
+        </h1>
+        <p class="mt-4 text-lg text-slate-700">
+          Nós cuidamos de todo o processo burocrático — você foca em importar, distribuir e vender com segurança.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://wa.me/5511971335199" target="_blank" class="rounded-2xl bg-blue-900 text-white px-5 py-3 text-sm font-semibold shadow hover:opacity-95">
+            Fale com um especialista agora
+          </a>
+          <a href="#servicos" class="rounded-2xl border border-blue-900 text-blue-900 px-5 py-3 text-sm font-semibold bg-white bg-opacity-70 backdrop-blur">
+            Ver serviços
+          </a>
+        </div>
+        <div class="mt-6 text-xs text-slate-600">
+          Atendimento multilíngue: PT / EN / ZH (Chinês)
+        </div>
+      </div>
+      <div class="md:justify-self-end">
+        <div class="bg-white bg-opacity-60 backdrop-blur rounded-3xl p-6 shadow-xl border border-white border-opacity-40">
+          <div class="text-sm text-slate-600">Prova social</div>
+          <div class="mt-2 text-2xl font-bold text-blue-900">+500 produtos regularizados</div>
+          <p class="mt-2 text-slate-700">Atuação em diversas áreas reguladas pela Anvisa.</p>
+          <div class="mt-4 grid grid-cols-3 gap-2 text-xs text-slate-600">
+            <div class="rounded-xl bg-white p-3 shadow">Cosméticos</div>
+            <div class="rounded-xl bg-white p-3 shadow">Saneantes</div>
+            <div class="rounded-xl bg-white p-3 shadow">Alimentos</div>
+            <div class="rounded-xl bg-white p-3 shadow">Dispositivos</div>
+            <div class="rounded-xl bg-white p-3 shadow">Suplementos</div>
+            <div class="rounded-xl bg-white p-3 shadow">Outros</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="bg-white scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Serviços</h2>
+      <p class="mt-3 text-slate-700">Documentação • Registro • Monitoramento • Suporte Multilíngue</p>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="bg-white scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Sobre Nós</h2>
+        <p class="mt-4 text-slate-700">
+          A <span class="font-semibold">Consultoria Marangoni</span> nasceu para simplificar fluxos regulatórios no Brasil. Atuamos com rigor técnico e clareza para que importadores e distribuidores lancem seus produtos com segurança e eficiência.
+        </p>
+        <p class="mt-3 text-slate-700">Responsável: <span class="font-semibold">Marina Marangoni</span></p>
+      </div>
+      <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6 shadow-sm">
+        <div class="text-sm text-slate-600">Autoridade</div>
+        <div class="mt-2 text-xl font-bold text-blue-900">+500 produtos regularizados</div>
+        <p class="mt-2 text-slate-700">Atuação em diversas áreas reguladas pela Anvisa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Contato</h2>
+      <p class="mt-4">WhatsApp: <a href="https://wa.me/5511971335199" class="underline">+55 (11) 97133-5199</a></p>
+      <p>Email: <a href="mailto:consultoriamarangoni1@gmail.com" class="underline">consultoriamarangoni1@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">© 2025 Consultoria Marangoni. Todos os direitos reservados.</div>
+      <div class="text-sm opacity-80">CNPJ e endereço (opcional) • PT / EN / ZH</div>
+    </div>
+  </footer>
+
+</body>
+</html>
