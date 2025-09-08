@@ -9,8 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
-    /* Compensa o header fixo ao rolar para uma âncora */
-    .section { scroll-margin-top: 96px; }
+    .section { scroll-margin-top: 96px; } /* compensa o header fixo */
   </style>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-blue-300 via-blue-200 to-white text-slate-900">
@@ -82,20 +81,20 @@
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Problemas que resolvemos</h2>
       <p class="mt-3 text-slate-700 max-w-3xl">
-        Minimizamos os processos burocráticos, com análise técnica por profissionais qualificados, para reduzir ao máximo as exigências e retrabalhos dos órgãos públicos.
+        Minimizamos os processos burocráticos, com análise técnica por profissionais qualificados, reduzindo ao máximo exigências e retrabalhos pelos órgãos públicos.
       </p>
       <div class="mt-8 grid md:grid-cols-3 gap-4">
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
           <div class="font-semibold text-slate-800">Produtos barrados na alfândega</div>
-          <div class="mt-2 text-sm text-slate-600">Evite retenções e acelere a entrada no mercado brasileiro.</div>
+          <div class="mt-2 text-sm text-slate-600">Resolvemos a burocracia e mantemos você no controle do processo.</div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
-          <div class="font-semibold text-slate-800">Multas e prejuízos financeiros</div>
-          <div class="mt-2 text-sm text-slate-600">Elimine erros que geram custos e atrasos no processo.</div>
+          <div class="font-semibold text-slate-800">Multas e prejuízos por não conformidade</div>
+          <div class="mt-2 text-sm text-slate-600">Resolvemos a burocracia e mantemos você no controle do processo.</div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
           <div class="font-semibold text-slate-800">Prazos longos e falta de informação</div>
-          <div class="mt-2 text-sm text-slate-600">Transparência total do status — sem surpresas.</div>
+          <div class="mt-2 text-sm text-slate-600">Resolvemos a burocracia e mantemos você no controle do processo.</div>
         </div>
       </div>
     </div>
@@ -106,7 +105,7 @@
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Benefícios</h2>
       <p class="mt-3 text-slate-700 max-w-3xl">
-        Redução de custos financeiros e de prazos processuais.
+        Redução de custos financeiros e de prazos processuais, com segurança regulatória em cada etapa.
       </p>
       <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         <div class="rounded-2xl bg-white bg-opacity-70 backdrop-blur p-5 border border-white shadow">
@@ -129,40 +128,68 @@
     </div>
   </section>
 
-  <!-- Serviços -->
+  <!-- Serviços (Details) -->
   <section id="servicos" class="section bg-white">
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Serviços</h2>
       <p class="mt-3 text-slate-700">Palavra‑chave • breve descrição • <span class="font-semibold">Saiba mais</span></p>
       <div class="mt-8 grid md:grid-cols-2 gap-6">
         <!-- Card 1 -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
-          <h3 class="text-lg font-semibold text-blue-900">Documentação</h3>
-          <p class="text-slate-700 mt-1">Adequação e tradução de dossiês conforme normas da Anvisa.</p>
-          <p class="mt-4 text-sm text-slate-700">Checagem técnica completa dos documentos exigidos para cada categoria de produto, reduzindo exigências e retrabalho.</p>
+        <details class="group rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <summary class="list-none flex items-start justify-between cursor-pointer">
+            <div>
+              <h3 class="text-lg font-semibold text-blue-900">Documentação</h3>
+              <p class="text-slate-700 mt-1">Adequação e tradução de dossiês conforme normas da Anvisa.</p>
+            </div>
+            <span class="ml-4 mt-1 rounded-full w-8 h-8 grid place-items-center border border-slate-300 text-slate-600">+</span>
+          </summary>
+          <div class="mt-4 text-sm text-slate-700">
+            Realizamos uma checagem técnica completa dos documentos exigidos para cada categoria de produto (cosméticos, alimentos, saneantes, dispositivos médicos, etc.). Adequamos formato, traduções e referências normativas para reduzir exigências e retrabalho.
+          </div>
           <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
-        </div>
+        </details>
         <!-- Card 2 -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
-          <h3 class="text-lg font-semibold text-blue-900">Registro &amp; Protocolo</h3>
-          <p class="text-slate-700 mt-1">Submissão completa e gestão dos trâmites oficiais.</p>
-          <p class="mt-4 text-sm text-slate-700">Cadastro, formulários e protocolos na plataforma oficial, com atualização em cada etapa até a decisão.</p>
+        <details class="group rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <summary class="list-none flex items-start justify-between cursor-pointer">
+            <div>
+              <h3 class="text-lg font-semibold text-blue-900">Registro &amp; Protocolo</h3>
+              <p class="text-slate-700 mt-1">Submissão completa e gestão dos trâmites oficiais.</p>
+            </div>
+            <span class="ml-4 mt-1 rounded-full w-8 h-8 grid place-items-center border border-slate-300 text-slate-600">+</span>
+          </summary>
+          <div class="mt-4 text-sm text-slate-700">
+            Cadastramos processos, preenchemos formulários, protocolamos e acompanhamos as interações na plataforma oficial, mantendo você informado sobre cada etapa até a decisão.
+          </div>
           <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
-        </div>
+        </details>
         <!-- Card 3 -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
-          <h3 class="text-lg font-semibold text-blue-900">Monitoramento</h3>
-          <p class="text-slate-700 mt-1">Acompanhamos cada etapa para evitar atrasos e exigências.</p>
-          <p class="mt-4 text-sm text-slate-700">Alertas de prazos e comunicados, com respostas técnicas para minimizar atrasos e custos.</p>
+        <details class="group rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <summary class="list-none flex items-start justify-between cursor-pointer">
+            <div>
+              <h3 class="text-lg font-semibold text-blue-900">Monitoramento</h3>
+              <p class="text-slate-700 mt-1">Acompanhamos cada etapa para evitar atrasos e exigências.</p>
+            </div>
+            <span class="ml-4 mt-1 rounded-full w-8 h-8 grid place-items-center border border-slate-300 text-slate-600">+</span>
+          </summary>
+          <div class="mt-4 text-sm text-slate-700">
+            Nada de ficar no escuro: monitoramos prazos, alertas e comunicados, antecipamos pendências e alinhamos respostas técnicas para minimizar atrasos e custos.
+          </div>
           <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
-        </div>
+        </details>
         <!-- Card 4 -->
-        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
-          <h3 class="text-lg font-semibold text-blue-900">Suporte Multilíngue (PT/EN/ZH)</h3>
-          <p class="text-slate-700 mt-1">Comunicação fluida com fornecedores e equipes internacionais.</p>
-          <p class="mt-4 text-sm text-slate-700">Atendimento em português, inglês e chinês simplificado para agilizar alinhamentos técnicos e documentais.</p>
+        <details class="group rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <summary class="list-none flex items-start justify-between cursor-pointer">
+            <div>
+              <h3 class="text-lg font-semibold text-blue-900">Suporte Multilíngue (PT/EN/ZH)</h3>
+              <p class="text-slate-700 mt-1">Comunicação fluida com fornecedores e equipes internacionais.</p>
+            </div>
+            <span class="ml-4 mt-1 rounded-full w-8 h-8 grid place-items-center border border-slate-300 text-slate-600">+</span>
+          </summary>
+          <div class="mt-4 text-sm text-slate-700">
+            Atendimento em português, inglês e chinês simplificado para agilizar trocas com fabricantes estrangeiros, alinhando especificações técnicas e documentais.
+          </div>
           <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
-        </div>
+        </details>
       </div>
     </div>
   </section>
@@ -246,5 +273,13 @@
     </div>
   </footer>
 
+  <!-- Script opcional: manter hash ao clicar no menu (para compartilhar link com âncora) -->
+  <script>
+    document.querySelectorAll('nav a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(){
+        // o comportamento suave já é feito via CSS; manter hash visível é automático
+      });
+    });
+  </script>
 </body>
 </html>
