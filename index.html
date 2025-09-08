@@ -4,14 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Consultoria Marangoni</title>
+  <meta name="description" content="Consultoria Marangoni — Regularização de produtos na Anvisa para importadores e distribuidores. Redução de custos e prazos processuais. +500 produtos regularizados." />
+  <!-- Tailwind via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
+    /* Compensa o header fixo ao rolar para uma âncora */
+    .section { scroll-margin-top: 96px; }
   </style>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-blue-300 via-blue-200 to-white text-slate-900">
 
-  <!-- Top Bar -->
+  <!-- Header -->
   <header class="sticky top-0 z-50 backdrop-blur bg-white bg-opacity-70 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -33,8 +37,8 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="relative scroll-mt-24">
+  <!-- Home / Hero -->
+  <section id="home" class="section relative">
     <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold text-blue-900 leading-tight">
@@ -73,16 +77,122 @@
     </div>
   </section>
 
+  <!-- Problemas que resolvemos -->
+  <section id="problemas" class="section bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Problemas que resolvemos</h2>
+      <p class="mt-3 text-slate-700 max-w-3xl">
+        Minimizamos os processos burocráticos, com análise técnica por profissionais qualificados, para reduzir ao máximo as exigências e retrabalhos dos órgãos públicos.
+      </p>
+      <div class="mt-8 grid md:grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div class="font-semibold text-slate-800">Produtos barrados na alfândega</div>
+          <div class="mt-2 text-sm text-slate-600">Evite retenções e acelere a entrada no mercado brasileiro.</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div class="font-semibold text-slate-800">Multas e prejuízos financeiros</div>
+          <div class="mt-2 text-sm text-slate-600">Elimine erros que geram custos e atrasos no processo.</div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+          <div class="font-semibold text-slate-800">Prazos longos e falta de informação</div>
+          <div class="mt-2 text-sm text-slate-600">Transparência total do status — sem surpresas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="section">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Benefícios</h2>
+      <p class="mt-3 text-slate-700 max-w-3xl">
+        Redução de custos financeiros e de prazos processuais.
+      </p>
+      <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-2xl bg-white bg-opacity-70 backdrop-blur p-5 border border-white shadow">
+          <div class="font-semibold text-slate-800">Agilidade</div>
+          <div class="mt-2 text-sm text-slate-600">Processos mais rápidos, com menos idas e vindas.</div>
+        </div>
+        <div class="rounded-2xl bg-white bg-opacity-70 backdrop-blur p-5 border border-white shadow">
+          <div class="font-semibold text-slate-800">Segurança</div>
+          <div class="mt-2 text-sm text-slate-600">Conformidade técnica e jurídica em cada etapa.</div>
+        </div>
+        <div class="rounded-2xl bg-white bg-opacity-70 backdrop-blur p-5 border border-white shadow">
+          <div class="font-semibold text-slate-800">Previsibilidade</div>
+          <div class="mt-2 text-sm text-slate-600">Acompanhamento de prazos e status do processo.</div>
+        </div>
+        <div class="rounded-2xl bg-white bg-opacity-70 backdrop-blur p-5 border border-white shadow">
+          <div class="font-semibold text-slate-800">Economia</div>
+          <div class="mt-2 text-sm text-slate-600">Menos retrabalho e custos com exigências.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Serviços -->
-  <section id="servicos" class="bg-white scroll-mt-24">
+  <section id="servicos" class="section bg-white">
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Serviços</h2>
-      <p class="mt-3 text-slate-700">Documentação • Registro • Monitoramento • Suporte Multilíngue</p>
+      <p class="mt-3 text-slate-700">Palavra‑chave • breve descrição • <span class="font-semibold">Saiba mais</span></p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <h3 class="text-lg font-semibold text-blue-900">Documentação</h3>
+          <p class="text-slate-700 mt-1">Adequação e tradução de dossiês conforme normas da Anvisa.</p>
+          <p class="mt-4 text-sm text-slate-700">Checagem técnica completa dos documentos exigidos para cada categoria de produto, reduzindo exigências e retrabalho.</p>
+          <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
+        </div>
+        <!-- Card 2 -->
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <h3 class="text-lg font-semibold text-blue-900">Registro &amp; Protocolo</h3>
+          <p class="text-slate-700 mt-1">Submissão completa e gestão dos trâmites oficiais.</p>
+          <p class="mt-4 text-sm text-slate-700">Cadastro, formulários e protocolos na plataforma oficial, com atualização em cada etapa até a decisão.</p>
+          <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <h3 class="text-lg font-semibold text-blue-900">Monitoramento</h3>
+          <p class="text-slate-700 mt-1">Acompanhamos cada etapa para evitar atrasos e exigências.</p>
+          <p class="mt-4 text-sm text-slate-700">Alertas de prazos e comunicados, com respostas técnicas para minimizar atrasos e custos.</p>
+          <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
+        </div>
+        <!-- Card 4 -->
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-sm bg-slate-50">
+          <h3 class="text-lg font-semibold text-blue-900">Suporte Multilíngue (PT/EN/ZH)</h3>
+          <p class="text-slate-700 mt-1">Comunicação fluida com fornecedores e equipes internacionais.</p>
+          <p class="mt-4 text-sm text-slate-700">Atendimento em português, inglês e chinês simplificado para agilizar alinhamentos técnicos e documentais.</p>
+          <a href="#contato" class="inline-block mt-4 text-sm font-semibold text-blue-900 underline">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section id="como-funciona" class="section">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Passo a passo simples</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="relative rounded-3xl bg-white bg-opacity-80 border border-white shadow p-6">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-2xl bg-blue-900 text-white grid place-items-center font-bold shadow">1</div>
+          <div class="font-semibold text-slate-800">Contato inicial</div>
+          <div class="mt-2 text-sm text-slate-600">Coletamos as informações pertinentes para entender seu caso.</div>
+        </div>
+        <div class="relative rounded-3xl bg-white bg-opacity-80 border border-white shadow p-6">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-2xl bg-blue-900 text-white grid place-items-center font-bold shadow">2</div>
+          <div class="font-semibold text-slate-800">Relação de documentos</div>
+          <div class="mt-2 text-sm text-slate-600">Enviamos a lista completa e orientamos os requisitos por categoria.</div>
+        </div>
+        <div class="relative rounded-3xl bg-white bg-opacity-80 border border-white shadow p-6">
+          <div class="absolute -top-4 -left-4 w-10 h-10 rounded-2xl bg-blue-900 text-white grid place-items-center font-bold shadow">3</div>
+          <div class="font-semibold text-slate-800">Protocolização do processo</div>
+          <div class="mt-2 text-sm text-slate-600">Executamos o protocolo e acompanhamos até a decisão final.</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Sobre Nós -->
-  <section id="sobre" class="bg-white scroll-mt-24">
+  <section id="sobre" class="section bg-white">
     <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Sobre Nós</h2>
@@ -100,11 +210,31 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="scroll-mt-24">
+  <section id="contato" class="section">
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-2xl md:text-3xl font-bold text-blue-900">Contato</h2>
-      <p class="mt-4">WhatsApp: <a href="https://wa.me/5511971335199" class="underline">+55 (11) 97133-5199</a></p>
-      <p>Email: <a href="mailto:consultoriamarangoni1@gmail.com" class="underline">consultoriamarangoni1@gmail.com</a></p>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <form onsubmit="event.preventDefault();" class="rounded-3xl bg-white bg-opacity-80 border border-white shadow p-6">
+          <div class="grid gap-4">
+            <input class="rounded-xl border border-slate-300 px-4 py-3" placeholder="Nome" />
+            <input class="rounded-xl border border-slate-300 px-4 py-3" placeholder="Empresa" />
+            <input class="rounded-xl border border-slate-300 px-4 py-3" placeholder="WhatsApp" />
+            <input class="rounded-xl border border-slate-300 px-4 py-3" placeholder="Produto a regularizar" />
+          </div>
+          <div class="mt-5 flex gap-3">
+            <a href="https://wa.me/5511971335199" target="_blank" class="rounded-2xl bg-blue-900 text-white px-5 py-3 text-sm font-semibold shadow">Solicitar consultoria gratuita</a>
+            <a href="mailto:consultoriamarangoni1@gmail.com" class="rounded-2xl border border-blue-900 text-blue-900 px-5 py-3 text-sm font-semibold bg-white">Enviar e-mail</a>
+          </div>
+        </form>
+        <div class="rounded-3xl bg-white bg-opacity-70 border border-white shadow p-6">
+          <div class="text-sm text-slate-600">Fale direto</div>
+          <div class="mt-2 space-y-2">
+            <a href="https://wa.me/5511971335199" target="_blank" class="block font-semibold text-blue-900 underline">WhatsApp: +55 (11) 97133-5199</a>
+            <a href="mailto:consultoriamarangoni1@gmail.com" class="block font-semibold text-blue-900 underline">Email: consultoriamarangoni1@gmail.com</a>
+          </div>
+          <p class="mt-4 text-sm text-slate-600">Tempo médio de resposta: em horário comercial.</p>
+        </div>
+      </div>
     </div>
   </section>
 
